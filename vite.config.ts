@@ -2,7 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
-export default defineConfig({
+const GH_BASE = '/contact-manager-react-js/'
+
+export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? GH_BASE : '/',
   plugins: [react()],
-  
-})
+}))
