@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const SERVER_URL = 'https://json-server-contact-react-js.vercel.app/api/'
+const SERVER_URL = 'https://json-server-contact-react-js.vercel.app/api'
 
 //  contacts
 export const getAllContact = () =>{
